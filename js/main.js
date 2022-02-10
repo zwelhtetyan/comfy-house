@@ -84,7 +84,7 @@ const displayProducts = () => {
                         <button class="cart-alert" data-id=${item.id}><i class="feather-shopping-cart"></i> Add to cart</button>
                     </div>
                     <p class="product-title">${item.title}</p>
-                    <p class="product-price">${item.price}</p>
+                    <p class="product-price">$ ${item.price}</p>
                 </div>
             </div>`;
         });
