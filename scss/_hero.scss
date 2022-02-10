@@ -1,0 +1,51 @@
+.hero {
+    padding-top: 60px;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/hero-bcg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-banner {
+        text-align: center;
+        padding: 2rem;
+        background-color: #ffffffc4;
+        @include responsive(mobile) {
+            padding: 2rem 0rem;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            letter-spacing: $letterSpacing;
+            @include responsive(mobile) {
+                font-size: 2.5rem;
+            }
+        }
+        button {
+            // background: $orange;
+            background-image: linear-gradient(
+                to left,
+                $mainWhite 50%,
+                $orange 50%
+            );
+            background-size: 200% 100%;
+            background-position: right;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: $letterSpacing;
+            font-weight: 700;
+            padding: 15px 40px;
+            border: 2px solid $orange;
+            transition: $transition;
+            &:hover {
+                // background-color: transparent;
+                background-position: left;
+            }
+        }
+    }
+}

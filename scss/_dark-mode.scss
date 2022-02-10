@@ -1,0 +1,30 @@
+body.dark-mode {
+    header {
+        background-color: $mainBlack;
+        color: $mainWhite;
+        // box-shadow: 1px 4px 8px -2px #7e797985;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+            rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+    .hero {
+        &-banner {
+            background-color: $darkModeBannerBg;
+            color: $mainWhite;
+        }
+    }
+    .store {
+        background-color: $mainBlack;
+        &-title {
+            color: $mainWhite;
+        }
+        .product-item {
+            .product-title {
+                color: $mainWhite;
+            }
+        }
+    }
+    .cart-item-bar {
+        background-color: $mainBlack;
+        color: $mainWhite;
+    }
+}
